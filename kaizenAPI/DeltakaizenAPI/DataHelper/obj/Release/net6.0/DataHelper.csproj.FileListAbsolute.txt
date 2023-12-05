@@ -1,0 +1,12 @@
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\bin\Release\net6.0\DataHelper.deps.json
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\bin\Release\net6.0\DataHelper.dll
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\bin\Release\net6.0\DataHelper.pdb
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.csproj.AssemblyReference.cache
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.AssemblyInfoInputs.cache
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.AssemblyInfo.cs
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.csproj.CoreCompileInputs.cache
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.dll
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\refint\DataHelper.dll
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.pdb
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\ref\DataHelper.dll

@@ -1,0 +1,11 @@
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\bin\Debug\net6.0\Report2.deps.json
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\bin\Debug\net6.0\Report2.dll
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\bin\Debug\net6.0\Report2.pdb
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\obj\Debug\net6.0\Report2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\obj\Debug\net6.0\Report2.AssemblyInfoInputs.cache
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\obj\Debug\net6.0\Report2.AssemblyInfo.cs
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\obj\Debug\net6.0\Report2.csproj.CoreCompileInputs.cache
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\obj\Debug\net6.0\Report2.dll
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\obj\Debug\net6.0\refint\Report2.dll
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\obj\Debug\net6.0\Report2.pdb
+D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Report2\obj\Debug\net6.0\ref\Report2.dll
