@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GQKJJfTWpPXrKE3iVCsmRUA/h1VR3WBG7V3/pVZtx7Vc0KUWkGpY5NpOxTUfLaTddpPv8LcTWNeWSaPAc9nYyQ==",
+  "dgSpecHash": "gO3AuTUNiUYC/nG+OLQl4OGmc2/JjI6gjzJVAjy4yef3uKImvA9r96Sr7VUuJLiDEy8/J4nUzi10OvfMTRyAGA==",
   "success": true,
-  "projectFilePath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj",
+  "projectFilePath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\aspnetcore.reporting\\2.1.0\\aspnetcore.reporting.2.1.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\aspnetcore.reportingservices\\2.1.0\\aspnetcore.reportingservices.2.1.0.nupkg.sha512",

@@ -10,3 +10,15 @@ D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\
 D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\refint\DataHelper.dll
 D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.pdb
 D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\ref\DataHelper.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\bin\Release\net6.0\DataHelper.deps.json
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\bin\Release\net6.0\DataHelper.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\bin\Release\net6.0\DataHelper.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.csproj.AssemblyReference.cache
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.GeneratedMSBuildEditorConfig.editorconfig
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.AssemblyInfoInputs.cache
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.AssemblyInfo.cs
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.csproj.CoreCompileInputs.cache
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\refint\DataHelper.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\DataHelper.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\DataHelper\obj\Release\net6.0\ref\DataHelper.dll
