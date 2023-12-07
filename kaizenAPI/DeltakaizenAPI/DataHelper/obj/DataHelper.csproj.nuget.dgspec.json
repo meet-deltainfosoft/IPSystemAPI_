@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {}
+    "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {}
   },
   "projects": {
-    "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {
+    "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj",
+        "projectUniqueName": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj",
         "projectName": "DataHelper",
-        "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj",
+        "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\obj\\",
+        "outputPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

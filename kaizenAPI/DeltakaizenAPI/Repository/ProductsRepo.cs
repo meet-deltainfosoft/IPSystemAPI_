@@ -25,7 +25,7 @@ namespace Repository
         {
             _Iconfiguration = configuration;
         }
-        public async Task<Response> GetAllProduct(Products pro  ducts)
+        public async Task<Response> GetAllProduct(Products products)
         {
             try
             {

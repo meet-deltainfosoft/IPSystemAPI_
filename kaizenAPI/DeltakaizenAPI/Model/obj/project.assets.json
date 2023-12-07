@@ -127,11 +127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj",
+      "projectUniqueName": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj",
+      "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\obj\\",
+      "outputPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

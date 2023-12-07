@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj": {}
+    "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj": {}
   },
   "projects": {
-    "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {
+    "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj",
+        "projectUniqueName": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj",
         "projectName": "DataHelper",
-        "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj",
+        "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\obj\\",
+        "outputPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -73,14 +73,14 @@
         }
       }
     },
-    "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj": {
+    "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj",
+        "projectUniqueName": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj",
         "projectName": "DeltakaizenAPI",
-        "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj",
+        "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\obj\\",
+        "outputPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DeltakaizenAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -97,17 +97,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {
-                "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj"
+              "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {
+                "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj"
               },
-              "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj": {
-                "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj"
+              "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj": {
+                "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj"
               },
-              "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj": {
-                "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj"
+              "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj"
               },
-              "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj": {
-                "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj"
+              "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj": {
+                "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj"
               }
             }
           }
@@ -182,14 +182,14 @@
         }
       }
     },
-    "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj": {
+    "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj",
+        "projectUniqueName": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj",
+        "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\obj\\",
+        "outputPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -243,14 +243,14 @@
         }
       }
     },
-    "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj": {
+    "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj",
+        "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Repository\\obj\\",
+        "outputPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -267,14 +267,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {
-                "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj"
+              "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj": {
+                "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\DataHelper\\DataHelper.csproj"
               },
-              "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj": {
-                "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj"
+              "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj": {
+                "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj"
               },
-              "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj": {
-                "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj"
+              "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj": {
+                "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj"
               }
             }
           }
@@ -338,14 +338,14 @@
         }
       }
     },
-    "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj": {
+    "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj",
+        "projectUniqueName": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj",
+        "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Services\\obj\\",
+        "outputPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -362,8 +362,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj": {
-                "projectPath": "D:\\Delta Projects\\kaizen\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj"
+              "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj": {
+                "projectPath": "D:\\DeltProjects_05Dec2023\\IPSystemAPI_\\kaizenAPI\\DeltakaizenAPI\\Model\\Model.csproj"
               }
             }
           }
