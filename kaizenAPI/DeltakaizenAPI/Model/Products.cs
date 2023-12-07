@@ -63,6 +63,7 @@ namespace Model
     public class DashBoardCheckLists
     {
         public string? ProductOrderNumber { get; set; }
+        public string? PumpSerialNumber { get; set; }
     }
 
     public class UpdatePumpType

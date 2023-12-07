@@ -13,3 +13,18 @@ D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Serv
 D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\refint\Services.dll
 D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Services.pdb
 D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\ref\Services.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\bin\Debug\net6.0\Services.deps.json
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\bin\Debug\net6.0\Services.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\bin\Debug\net6.0\Services.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\bin\Debug\net6.0\Model.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\bin\Debug\net6.0\Model.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Services.csproj.CopyComplete
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Services.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\refint\Services.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\Services.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Services\obj\Debug\net6.0\ref\Services.dll

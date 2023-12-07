@@ -405,6 +405,7 @@ namespace Repository
                     var dynamicParameters = new DynamicParameters();
                     dynamicParameters.Add("@Action", "DashBoardCheckLists");
                     dynamicParameters.Add("@ProductOrderNumber", DashBoardCheckLists.ProductOrderNumber);
+                    dynamicParameters.Add("@PumpSerialNumber", DashBoardCheckLists.PumpSerialNumber);
                     var cmd = new CommandDefinition("Kaizen_Master_Products", dynamicParameters, commandType: CommandType.StoredProcedure, flags: CommandFlags.NoCache);
                     using (var reader = await dbConnection.QueryMultipleAsync(cmd))
                     {

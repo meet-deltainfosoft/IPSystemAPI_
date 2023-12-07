@@ -17,3 +17,22 @@ D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Re
 D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\refint\Repository.dll
 D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Repository.pdb
 D:\Delta Projects\kaizen\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\ref\Repository.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\bin\Debug\net6.0\Repository.deps.json
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\bin\Debug\net6.0\Repository.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\bin\Debug\net6.0\Repository.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\bin\Debug\net6.0\DataHelper.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\bin\Debug\net6.0\Model.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\bin\Debug\net6.0\Services.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\bin\Debug\net6.0\DataHelper.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\bin\Debug\net6.0\Model.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\bin\Debug\net6.0\Services.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Repository.csproj.CopyComplete
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Repository.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\refint\Repository.dll
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\Repository.pdb
+D:\DeltProjects_05Dec2023\IPSystemAPI_\kaizenAPI\DeltakaizenAPI\Repository\obj\Debug\net6.0\ref\Repository.dll
