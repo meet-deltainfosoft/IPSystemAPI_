@@ -28,8 +28,6 @@ namespace Services
         public Task<Response> MotorKWValidate(MotorKWValidate motorKWValidate);
         public Task<Response> GetPoDetailsBySerialNumber(GetPoDetailsBySerialNumber GetPoDetailsBySerialNumber);
         public Task<Response> GetKWLabel();
-
         public Task<Response> UpdateMotorSerialNumber(UpdateMotorSerialNumber UpdateMotorSerialNumber);
-
     }
 }

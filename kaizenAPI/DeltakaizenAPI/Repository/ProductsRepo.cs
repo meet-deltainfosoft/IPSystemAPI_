@@ -167,7 +167,7 @@ namespace Repository
             {
                 using (var dbConnection = GetDbConnection())
                 {
-
+                    var FileUploadPath = _Iconfiguration["UploadFolderPath"];
                     var dynamicParameters = new DynamicParameters();
                     string imageDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Images");
 
@@ -191,7 +191,7 @@ namespace Repository
                         dynamicParameters.Add("@PumpSerialNumber", uploadPump.PumpSerialNumber);
                         dynamicParameters.Add("@IsSkip", uploadPump.IsSkip);
                         dynamicParameters.Add("@ProductOrderNumber", uploadPump.ProductOrderNumber);
-                        dynamicParameters.Add("@PumpPhotos", uniqueFileName);
+                        dynamicParameters.Add("@PumpPhotos", FileUploadPath + uniqueFileName);
                     }
                     else
                     {
@@ -273,8 +273,7 @@ namespace Repository
         {
             try
             {
-
-
+                var FileUploadPath = _Iconfiguration["UploadFolderPath"];
                 var dynamicParameters = new DynamicParameters();
                 dynamicParameters.Add("@Action", "PackagingPhoto");
                 dynamicParameters.Add("@ProductOrderNumber", packagingPhoto.ProductOrderNumber);
@@ -297,7 +296,7 @@ namespace Repository
                     {
                         await FrontPhoto.CopyToAsync(fileStream);
                     }
-                    dynamicParameters.Add("@Photo1", uniqueFileName);
+                    dynamicParameters.Add("@Photo1", FileUploadPath+uniqueFileName);
                 }
 
                 if (TopPhoto != null && TopPhoto.Length > 0)
@@ -309,7 +308,7 @@ namespace Repository
                     {
                         await TopPhoto.CopyToAsync(fileStream);
                     }
-                    dynamicParameters.Add("@Photo2", uniqueFileName);
+                    dynamicParameters.Add("@Photo2", FileUploadPath + uniqueFileName);
                 }
 
                 if (OpenPhoto != null && OpenPhoto.Length > 0)
@@ -321,7 +320,7 @@ namespace Repository
                     {
                         await OpenPhoto.CopyToAsync(fileStream);
                     }
-                    dynamicParameters.Add("@Photo3", uniqueFileName);
+                    dynamicParameters.Add("@Photo3", FileUploadPath + uniqueFileName);
                 }
 
                 if (ClosedPhoto != null && ClosedPhoto.Length > 0)
@@ -333,57 +332,8 @@ namespace Repository
                     {
                         await ClosedPhoto.CopyToAsync(fileStream);
                     }
-                    dynamicParameters.Add("@Photo4", uniqueFileName);
+                    dynamicParameters.Add("@Photo4", FileUploadPath + uniqueFileName);
                 }
-
-
-                //foreach (var file in files)
-                //{
-                //    if (file.Length > 0)
-                //    {
-                //        if (file.FileName.Contains("FrontPhoto"))
-                //        {
-                //            string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-                //            string filePath = Path.Combine(imageDirectory, uniqueFileName);
-                //            dynamicParameters.Add("@Photo1", uniqueFileName);
-                //            using (var fileStream = new FileStream(filePath, FileMode.Create))
-                //            {
-                //                await file.CopyToAsync(fileStream);
-                //            }
-                //        }
-                //        else if(file.FileName.Contains("TopPhoto"))
-                //        {
-                //            string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-                //            string filePath = Path.Combine(imageDirectory, uniqueFileName);
-                //            dynamicParameters.Add("@Photo2", uniqueFileName);
-                //            using (var fileStream = new FileStream(filePath, FileMode.Create))
-                //            {
-                //                await file.CopyToAsync(fileStream);
-                //            }
-                //        }
-
-                //        else if (file.FileName.Contains("OpenPhoto"))
-                //        {
-                //            string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-                //            string filePath = Path.Combine(imageDirectory, uniqueFileName);
-                //            dynamicParameters.Add("@Photo3", uniqueFileName);
-                //            using (var fileStream = new FileStream(filePath, FileMode.Create))
-                //            {
-                //                await file.CopyToAsync(fileStream);
-                //            }
-                //        }
-                //        else if(file.FileName.Contains("ClosedPhoto"))
-                //        {
-                //            string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-                //            string filePath = Path.Combine(imageDirectory, uniqueFileName);
-                //            dynamicParameters.Add("@Photo4", uniqueFileName);
-                //            using (var fileStream = new FileStream(filePath, FileMode.Create))
-                //            {
-                //                await file.CopyToAsync(fileStream);
-                //            }
-                //        }
-                //    }
-                //}
                 using (var dbConnection = GetDbConnection())
                 {
                     var result = await dbConnection.QueryAsync("Kaizen_Master_Products", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
@@ -393,7 +343,6 @@ namespace Repository
             catch (Exception ex)
             {
                 return new Response() { IsSuccessful = true, Message = "Successful", Data = null };
-
             }
         }
         public async Task<Response> DashBoardCheckLists(DashBoardCheckLists DashBoardCheckLists)

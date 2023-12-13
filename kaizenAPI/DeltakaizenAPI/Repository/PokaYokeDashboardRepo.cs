@@ -16,20 +16,58 @@ namespace Repository
         {
         }
 
-        public async Task<Response> GetPokaYokeDashBoard()
+        public async Task<Response> GetDashBoardById(GetDashBoardById GetDashBoardById)
         {
             try
             {
                 using (var dbConnection = GetDbConnection())
                 {
                     DynamicParameters dynamicParameters = new DynamicParameters();
-                    dynamicParameters.Add("@Action", "GetPokaYokeDashBoard"); // Remove the extra space after "Action"
+                    dynamicParameters.Add("@ProductId", GetDashBoardById.ProductId);
+                    dynamicParameters.Add("@PumpSerialNumber", GetDashBoardById.PumpSerialNumber);
+                    dynamicParameters.Add("@Action", "GetDashBoardById");
+                    using (var multiResult = await dbConnection.QueryMultipleAsync("Poko_Report_DashBoard", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure))
+                    {
+                        var ProductsData = await multiResult.ReadAsync();
+                        var ProductsDetail = await multiResult.ReadAsync();
+
+                        return new Response()
+                        {
+                            Message = "Successful",
+                            IsSuccessful = true,
+                            Data = new
+                            {
+                                ProductsData = ProductsData,
+                                ProductsDetail = ProductsDetail
+                            }
+                        };
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public async Task<Response> GetPokaYokeDashBoard(PokaYokeDashboard pokaYokeDashboard)
+        {
+            try
+            {
+                using (var dbConnection = GetDbConnection())
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@Type", pokaYokeDashboard.Type);
+                    dynamicParameters.Add("@Action", "GetPokaYokeDashBoard");
+
 
                     using (var multiResult = await dbConnection.QueryMultipleAsync("PokaYoke_DashBoard", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure))
                     {
                         var ProductLeaderBoard = await multiResult.ReadAsync();
                         var WidgerData = await multiResult.ReadAsync();
                         var MonthWiseQty = await multiResult.ReadAsync();
+                        var ProductsDetail = await multiResult.ReadAsync();
 
                         return new Response()
                         {
@@ -39,7 +77,8 @@ namespace Repository
                             {
                                 ProductLeaderBoard = ProductLeaderBoard,
                                 WidgerData = WidgerData,
-                                MonthWiseQty = MonthWiseQty
+                                MonthWiseQty = MonthWiseQty,
+                                ProductsDetail = ProductsDetail
                             }
                         };
                     }

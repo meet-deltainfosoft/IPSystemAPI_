@@ -9,6 +9,7 @@ namespace Services
 {
     public interface IPokaYokeDashboard
     {
-        public Task<Response> GetPokaYokeDashBoard();
+        public Task<Response> GetPokaYokeDashBoard(PokaYokeDashboard pokaYokeDashboard);
+        public Task<Response> GetDashBoardById(GetDashBoardById GetDashBoardById);
     }
 }

@@ -54,7 +54,7 @@ namespace Repository
                         var Performer = await reader.ReadAsync();
                         var IPsPointsYearlyTrend = await reader.ReadAsync();
                         var CostSavingTrend = await reader.ReadAsync();
-                        return new Response() { IsSuccessful = true, Message = "", Data = new { IpSummary  = IpSummary , HighestPoints  = HighestPoints , Performer  = Performer , IPsPointsYearlyTrend  = IPsPointsYearlyTrend , CostSavingTrend  = CostSavingTrend } };
+                        return new Response() { IsSuccessful = true, Message = "", Data = new { IpSummary = IpSummary, HighestPoints = HighestPoints, Performer = Performer, IPsPointsYearlyTrend = IPsPointsYearlyTrend, CostSavingTrend = CostSavingTrend } };
                     }
                 }
             }
@@ -82,8 +82,7 @@ namespace Repository
             }
 
 
-            
+
         }
     }
 }
-    

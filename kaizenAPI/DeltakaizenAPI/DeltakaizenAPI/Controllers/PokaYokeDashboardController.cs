@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Model;
 using Services;
 
 namespace DeltakaizenAPI.Controllers
@@ -15,11 +16,18 @@ namespace DeltakaizenAPI.Controllers
             _IpokaYokeDashboard = IpokaYokeDashboard;
         }
 
-        [HttpGet]
+        [HttpPost]
         [ActionName("GetPokaYokeDashBoard")]
-        public async Task<IActionResult> GetPokaYokeDashBoard()
+        public async Task<IActionResult> GetPokaYokeDashBoard(PokaYokeDashboard pokaYokeDashboard)
         {
-            return Ok(await _IpokaYokeDashboard.GetPokaYokeDashBoard());
+            return Ok(await _IpokaYokeDashboard.GetPokaYokeDashBoard(pokaYokeDashboard));
+        }
+
+        [HttpPost]
+        [ActionName("GetDashBoardById")]
+        public async Task<IActionResult> GetDashBoardById(GetDashBoardById GetDashBoardById)
+        {
+            return Ok(await _IpokaYokeDashboard.GetDashBoardById(GetDashBoardById));
         }
     }
 }
