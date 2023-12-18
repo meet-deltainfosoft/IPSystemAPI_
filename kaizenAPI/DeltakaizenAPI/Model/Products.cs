@@ -118,4 +118,24 @@ namespace Model
         public string? MotorPartNumber { get; set; }
         public string? MotorSerialNumber { get; set; }
     }
+
+    public class UploadNamePlatePhotos
+    {
+        public string? ProductOrderNumber { get; set; }
+        public string? StageNo { get; set; }
+        public bool? StageStatus { get; set; }
+        public string? PumpSerialNumber { get; set; }
+        public bool? IsSkip { get; set; }
+        public Guid? UserId { get; set; }
+    }
+
+    public class UploadBaseMeasurementPhotos
+    {
+        public string? ProductOrderNumber { get; set; }
+        public string? StageNo { get; set; }
+        public bool? StageStatus { get; set; }
+        public string? PumpSerialNumber { get; set; }
+        public bool? IsSkip { get; set; }
+        public Guid? UserId { get; set; }
+    }
 }

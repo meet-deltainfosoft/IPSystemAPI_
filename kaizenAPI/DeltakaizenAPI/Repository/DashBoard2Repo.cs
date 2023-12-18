@@ -84,5 +84,30 @@ namespace Repository
 
 
         }
+        public async Task<Response> GetLeaderBoardDetail(GetLeaderBoardDetail getLeaderBoardDetail)
+        {
+            try
+            {
+                using (var dbConnection = GetDbConnection())
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@FromDate", getLeaderBoardDetail.FromDate);
+                    dynamicParameters.Add("@ToDate", getLeaderBoardDetail.ToDate);
+                    dynamicParameters.Add("@PlantId", getLeaderBoardDetail.PlantId);
+                    dynamicParameters.Add("@Action", "GetLeaderBoardDetail");
+                    var cmd = new CommandDefinition("Kaizen_LeaderBoard_Detail", dynamicParameters, commandType: CommandType.StoredProcedure, flags: CommandFlags.NoCache);
+                    using (var reader = await dbConnection.QueryMultipleAsync(cmd))
+                    {
+                        var LeaderBoardDetails = await reader.ReadAsync();
+                       
+                        return new Response() { IsSuccessful = true, Message = "", Data = new { LeaderBoardDetails = LeaderBoardDetails } };
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return new Response() { Message = "Oops Something Went Wrong!!", IsSuccessful = false, Data = null };
+            }
+        }
     }
 }

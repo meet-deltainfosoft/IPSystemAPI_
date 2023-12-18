@@ -39,5 +39,12 @@ namespace DeltakaizenAPI.Controllers
             return File(stream, "application/pdf");
             //return Ok(await _IdashBoard2.DownloadGiftPDF());
         }
+
+        [HttpPost]
+        [ActionName("GetLeaderBoardDetail")]
+        public async Task<IActionResult> GetLeaderBoardDetail(GetLeaderBoardDetail getLeaderBoardDetail)
+        {
+            return Ok(await _IdashBoard2.GetLeaderBoardDetail(getLeaderBoardDetail));
+        }
     }
 }

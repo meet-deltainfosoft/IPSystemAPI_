@@ -29,5 +29,7 @@ namespace Services
         public Task<Response> GetPoDetailsBySerialNumber(GetPoDetailsBySerialNumber GetPoDetailsBySerialNumber);
         public Task<Response> GetKWLabel();
         public Task<Response> UpdateMotorSerialNumber(UpdateMotorSerialNumber UpdateMotorSerialNumber);
+        public Task<Response> UploadNamePlatePhotos(UploadNamePlatePhotos UploadNamePlatePhotos, IFormFile FrontPhoto);
+        public Task<Response> UploadBaseMeasurementPhotos(UploadBaseMeasurementPhotos UploadBaseMeasurementPhotos, IFormFile Photo1);
     }
 }

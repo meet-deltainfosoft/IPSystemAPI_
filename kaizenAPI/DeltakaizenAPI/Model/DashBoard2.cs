@@ -12,4 +12,11 @@ namespace Model
         public string? FromDate { get; set; }
         public string? ToDate { get; set; }
     }
+
+    public class GetLeaderBoardDetail {
+        public Guid? PlantId { get; set; }
+        public string? FromDate { get; set; }
+        public string? ToDate { get; set; }
+
+    }
 }

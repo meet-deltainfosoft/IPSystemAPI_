@@ -638,5 +638,81 @@ namespace Repository
                 return new Response() { IsSuccessful = false, Message = "Oops Something Went Wrong", Data = null };
             }
         }
+        public async Task<Response> UploadNamePlatePhotos(UploadNamePlatePhotos UploadNamePlatePhotos, IFormFile FrontPhoto)
+        {
+            try
+            {
+                var FileUploadPath = _Iconfiguration["UploadFolderPath"];
+                using (var dbConnection = GetDbConnection())
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@Action", "UploadNamePlatePhotos");
+                    dynamicParameters.Add("@ProductOrderNumber", UploadNamePlatePhotos.ProductOrderNumber);
+                    dynamicParameters.Add("@StageNo", UploadNamePlatePhotos.StageNo);
+                    dynamicParameters.Add("@StageStatus", UploadNamePlatePhotos.StageStatus);
+                    dynamicParameters.Add("@UserId", UploadNamePlatePhotos.UserId);
+                    dynamicParameters.Add("@IsSkip", UploadNamePlatePhotos.IsSkip);
+                    dynamicParameters.Add("@PumpSerialNumber", UploadNamePlatePhotos.PumpSerialNumber);
+                    string imageDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+                    if (!Directory.Exists(imageDirectory))
+                    {
+                        Directory.CreateDirectory(imageDirectory);
+                    }
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + FrontPhoto.FileName;
+                    string filePath = Path.Combine(imageDirectory, uniqueFileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await FrontPhoto.CopyToAsync(fileStream);
+                    }
+                    dynamicParameters.Add("@Photo1", FileUploadPath + uniqueFileName);
+
+                    var result = await dbConnection.QueryAsync("Kaizen_Master_Products", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
+                    return new Response() { Message = "Successful", IsSuccessful = true, Data = result };
+                }
+            }
+            catch (Exception)
+            {
+                return new Response() { IsSuccessful = false, Message = "Oops Something Went Wrong", Data = null };
+            }
+        }
+        public async Task<Response> UploadBaseMeasurementPhotos(UploadBaseMeasurementPhotos UploadBaseMeasurementPhotos, IFormFile Photo1)
+        {
+            try
+            {
+                var FileUploadPath = _Iconfiguration["UploadFolderPath"];
+                using (var dbConnection = GetDbConnection())
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@Action", "UploadBaseMeasurementPhotos");
+                    dynamicParameters.Add("@ProductOrderNumber", UploadBaseMeasurementPhotos.ProductOrderNumber);
+                    dynamicParameters.Add("@StageNo", UploadBaseMeasurementPhotos.StageNo);
+                    dynamicParameters.Add("@StageStatus", UploadBaseMeasurementPhotos.StageStatus);
+                    dynamicParameters.Add("@UserId", UploadBaseMeasurementPhotos.UserId);
+                    dynamicParameters.Add("@IsSkip", UploadBaseMeasurementPhotos.IsSkip);
+                    dynamicParameters.Add("@PumpSerialNumber", UploadBaseMeasurementPhotos.PumpSerialNumber);
+                    string imageDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+                    if (!Directory.Exists(imageDirectory))
+                    {
+                        Directory.CreateDirectory(imageDirectory);
+                    }
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + Photo1.FileName;
+                    string filePath = Path.Combine(imageDirectory, uniqueFileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await Photo1.CopyToAsync(fileStream);
+                    }
+                    dynamicParameters.Add("@Photo1", FileUploadPath + uniqueFileName);
+
+                    var result = await dbConnection.QueryAsync("Kaizen_Master_Products", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
+                    return new Response() { Message = "Successful", IsSuccessful = true, Data = result };
+                }
+            }
+            catch (Exception)
+            {
+                return new Response() { IsSuccessful = false, Message = "Oops Something Went Wrong", Data = null };
+            }
+        }
     }
 }

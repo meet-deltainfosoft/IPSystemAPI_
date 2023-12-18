@@ -12,5 +12,7 @@ namespace Services
         public Task<Response> GetDashBoardData(DashBoard dashBoard2);
         public Task<Response> GetDashBoardDropdDown();
         public Task<Stream> DownloadGiftPDF();
+        public Task<Response> GetLeaderBoardDetail(GetLeaderBoardDetail getLeaderBoardDetail);
+
     }
 }

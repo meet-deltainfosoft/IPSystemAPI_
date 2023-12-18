@@ -157,6 +157,20 @@ namespace DeltakaizenAPI.Controllers
         {
             return Ok(await _Iproducts.UpdateMotorSerialNumber(UpdateMotorSerialNumber));
         }
+
+        [HttpPost]
+        [ActionName("UploadNamePlatePhotos")]
+        public async Task<IActionResult> UploadNamePlatePhotos([FromForm] UploadNamePlatePhotos UploadNamePlatePhotos, IFormFile FrontPhoto)
+        {
+            return Ok(await _Iproducts.UploadNamePlatePhotos(UploadNamePlatePhotos, FrontPhoto));
+        }
+
+        [HttpPost]
+        [ActionName("UploadBaseMeasurementPhotos")]
+        public async Task<IActionResult> UploadBaseMeasurementPhotos([FromForm] UploadBaseMeasurementPhotos UploadBaseMeasurementPhotos, IFormFile Photo1)
+        {
+            return Ok(await _Iproducts.UploadBaseMeasurementPhotos(UploadBaseMeasurementPhotos, Photo1));
+        }
     }
 
 }
