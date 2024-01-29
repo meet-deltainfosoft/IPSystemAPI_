@@ -46,5 +46,12 @@ namespace DeltakaizenAPI.Controllers
         {
             return Ok(await _IdashBoard2.GetLeaderBoardDetail(getLeaderBoardDetail));
         }
+
+        [HttpGet]
+        [ActionName("GetLeaderBoardDetailDropdDown")]
+        public async Task<IActionResult> GetLeaderBoardDetailDropdDown()
+        {
+            return Ok(await _IdashBoard2.GetLeaderBoardDetailDropdDown());
+        }
     }
 }

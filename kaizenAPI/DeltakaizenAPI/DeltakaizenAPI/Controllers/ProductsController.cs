@@ -115,7 +115,7 @@ namespace DeltakaizenAPI.Controllers
 
         [HttpPost]
         [ActionName("UpdateCurveImages")]
-        public async Task<IActionResult> UpdateCurveImages([FromForm] UpdateCurveImages UpdateCurveImages, IFormFile ImageCurveImage, IFormFile ImageFrontView, IFormFile ImageSideView)
+        public async Task<IActionResult> UpdateCurveImages([FromForm] UpdateCurveImages UpdateCurveImages, IFormFile? ImageCurveImage, IFormFile? ImageFrontView, IFormFile? ImageSideView)
         {
             return Ok(await _Iproducts.UpdateCurveImages(UpdateCurveImages,ImageCurveImage, ImageFrontView, ImageSideView));
         }
@@ -170,6 +170,20 @@ namespace DeltakaizenAPI.Controllers
         public async Task<IActionResult> UploadBaseMeasurementPhotos([FromForm] UploadBaseMeasurementPhotos UploadBaseMeasurementPhotos, IFormFile Photo1)
         {
             return Ok(await _Iproducts.UploadBaseMeasurementPhotos(UploadBaseMeasurementPhotos, Photo1));
+        }
+
+        [HttpGet]
+        [ActionName("GetPumpDetails")]
+        public async Task<IActionResult> GetPumpDetails()
+        {
+            return Ok(await _Iproducts.GetPumpDetails());
+        }
+
+        [HttpPost]
+        [ActionName("GetPumpDetailsById")]
+        public async Task<IActionResult> GetPumpDetailsById(GetPumpDetailsById getPumpDetailsById)
+        {
+            return Ok(await _Iproducts.GetPumpDetailsById(getPumpDetailsById));
         }
     }
 

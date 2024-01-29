@@ -11,5 +11,6 @@ namespace Services
     {
         public Task<Response> GetPokaYokeDashBoard(PokaYokeDashboard pokaYokeDashboard);
         public Task<Response> GetDashBoardById(GetDashBoardById GetDashBoardById);
+        public Task<Response> DashBoard2(DashBoard2 dashBoard2);
     }
 }

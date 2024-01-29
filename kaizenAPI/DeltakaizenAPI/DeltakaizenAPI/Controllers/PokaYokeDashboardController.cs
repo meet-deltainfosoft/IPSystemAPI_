@@ -29,5 +29,12 @@ namespace DeltakaizenAPI.Controllers
         {
             return Ok(await _IpokaYokeDashboard.GetDashBoardById(GetDashBoardById));
         }
+
+        [HttpPost]
+        [ActionName("DashBoard2")]
+        public async Task<IActionResult> DashBoard2(DashBoard2 DashBoard2)
+        {
+            return Ok(await _IpokaYokeDashboard.DashBoard2(DashBoard2));
+        }
     }
 }

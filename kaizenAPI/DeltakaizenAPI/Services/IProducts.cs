@@ -23,7 +23,7 @@ namespace Services
         public Task<Response> UpdatePumpType(UpdatePumpType UpdatePumpType);
         public Task<Response> InsertPumpModelDetails(InsertPumpModelDetails insertPumpModelDetails, IFormFile ImageFrontView, IFormFile ImageSideView, IFormFile ImageCurveImage);
         public Task<Response> GetPumpDetails(GetPumpDetails getPumpDetails);
-        public Task<Response> UpdateCurveImages(UpdateCurveImages updateCurveImages, IFormFile ImageCurveImage, IFormFile ImageFrontView, IFormFile ImageSideView);
+        public Task<Response> UpdateCurveImages(UpdateCurveImages updateCurveImages, IFormFile? ImageCurveImage, IFormFile? ImageFrontView, IFormFile? ImageSideView);
         public Task<Response> ValidateNamePlateString(ValidateNamePlateString validateNamePlateString);
         public Task<Response> MotorKWValidate(MotorKWValidate motorKWValidate);
         public Task<Response> GetPoDetailsBySerialNumber(GetPoDetailsBySerialNumber GetPoDetailsBySerialNumber);
@@ -31,5 +31,7 @@ namespace Services
         public Task<Response> UpdateMotorSerialNumber(UpdateMotorSerialNumber UpdateMotorSerialNumber);
         public Task<Response> UploadNamePlatePhotos(UploadNamePlatePhotos UploadNamePlatePhotos, IFormFile FrontPhoto);
         public Task<Response> UploadBaseMeasurementPhotos(UploadBaseMeasurementPhotos UploadBaseMeasurementPhotos, IFormFile Photo1);
+        public Task<Response> GetPumpDetails();
+        public Task<Response> GetPumpDetailsById(GetPumpDetailsById GetPumpDetailsById);
     }
 }

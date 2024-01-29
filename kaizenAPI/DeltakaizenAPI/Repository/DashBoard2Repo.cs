@@ -94,6 +94,7 @@ namespace Repository
                     dynamicParameters.Add("@FromDate", getLeaderBoardDetail.FromDate);
                     dynamicParameters.Add("@ToDate", getLeaderBoardDetail.ToDate);
                     dynamicParameters.Add("@PlantId", getLeaderBoardDetail.PlantId);
+                    dynamicParameters.Add("@EmployeeId", getLeaderBoardDetail.EmployeeId);
                     dynamicParameters.Add("@Action", "GetLeaderBoardDetail");
                     var cmd = new CommandDefinition("Kaizen_LeaderBoard_Detail", dynamicParameters, commandType: CommandType.StoredProcedure, flags: CommandFlags.NoCache);
                     using (var reader = await dbConnection.QueryMultipleAsync(cmd))
@@ -102,6 +103,23 @@ namespace Repository
                        
                         return new Response() { IsSuccessful = true, Message = "", Data = new { LeaderBoardDetails = LeaderBoardDetails } };
                     }
+                }
+            }
+            catch (Exception ex)
+            {
+                return new Response() { Message = "Oops Something Went Wrong!!", IsSuccessful = false, Data = null };
+            }
+        }
+        public async Task<Response> GetLeaderBoardDetailDropdDown()
+        {
+            try
+            {
+                using (var dbConnection = GetDbConnection())
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@Action", "GetLeaderBoardDetailDropdDown");
+                    var result = await dbConnection.QueryAsync("Kaizen_LeaderBoard_Detail", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
+                    return new Response() { IsSuccessful = true, Message = "Successful", Data = result };
                 }
             }
             catch (Exception ex)

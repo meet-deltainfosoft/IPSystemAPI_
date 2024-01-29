@@ -22,6 +22,9 @@ namespace Model
         public bool? IsSkip { get; set; }
         public string? kwLabel { get; set; }
         public string? PlantId { get; set; }
+        public string? MainType { get; set; }
+
+        public string? ApplicationVersion { get; set; }
     }
     public class UploadPumpPhotos
     {
@@ -47,6 +50,7 @@ namespace Model
         public string? PumpSerialNumber { get; set; }
         public bool? IsSkip { get; set; }
         public Guid? UserId { get; set; }
+        
     }
 
     public class PackagingPhoto
@@ -81,7 +85,7 @@ namespace Model
         public string? ModelGroup { get; set; }
         public string? ModelType { get; set; }
         public Guid? UserId { get; set; }
-       // public string? BaseType { get; set; }
+        // public string? BaseType { get; set; }
     }
 
     public class GetPumpDetails
@@ -117,6 +121,7 @@ namespace Model
         public string? ProductOrderNumber { get; set; }
         public string? MotorPartNumber { get; set; }
         public string? MotorSerialNumber { get; set; }
+        public string? PumpSerialNumber { get; set; }
     }
 
     public class UploadNamePlatePhotos
@@ -126,6 +131,8 @@ namespace Model
         public bool? StageStatus { get; set; }
         public string? PumpSerialNumber { get; set; }
         public bool? IsSkip { get; set; }
+
+        public string? NamePlateText { get; set; }
         public Guid? UserId { get; set; }
     }
 
@@ -137,5 +144,9 @@ namespace Model
         public string? PumpSerialNumber { get; set; }
         public bool? IsSkip { get; set; }
         public Guid? UserId { get; set; }
+    }
+
+    public class GetPumpDetailsById {
+        public Guid? PumpMotorId { get; set; }
     }
 }

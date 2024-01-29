@@ -16,6 +16,30 @@ namespace Repository
         {
         }
 
+        public async Task<Response> DashBoard2(DashBoard2 dashBoard2)
+        {
+            try
+            {
+                using (var dbConnection = GetDbConnection())
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@FromDate", dashBoard2.FromDate);
+                    dynamicParameters.Add("@ToDate", dashBoard2.ToDate);
+                    dynamicParameters.Add("@WorkOrder", dashBoard2.WorkOrder);
+                    dynamicParameters.Add("@PumpDescription", dashBoard2.PumpDescription);
+                    dynamicParameters.Add("@PumpDUTID", dashBoard2.PumpDUTID);
+                    dynamicParameters.Add("@MotorDUTID", dashBoard2.MotorDUTID);
+                    dynamicParameters.Add("@Type", dashBoard2.Type);
+                    var result = await dbConnection.QueryAsync("PokaYoke_DashBoard2", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
+                    return new Response() { IsSuccessful = true, Message = "Successful", Data = result };
+                }
+            }
+            catch (Exception)
+            {
+                return new Response() { Message = "Oops Something Went Wrong!!", IsSuccessful = false, Data = null };
+            }
+        }
+
         public async Task<Response> GetDashBoardById(GetDashBoardById GetDashBoardById)
         {
             try
@@ -46,8 +70,7 @@ namespace Repository
             }
             catch (Exception)
             {
-
-                throw;
+                return new Response() { Message = "Oops Something Went Wrong!!", IsSuccessful = false, Data = null };
             }
         }
 

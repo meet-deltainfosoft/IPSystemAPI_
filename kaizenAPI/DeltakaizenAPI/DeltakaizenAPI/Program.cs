@@ -38,6 +38,7 @@ builder.Services.AddSingleton<IReports, ReportsRepo>();
 builder.Services.AddSingleton<IUsers, UsersRepo>();
 builder.Services.AddSingleton<IPokoYoko, PokoYokoRepo>();
 builder.Services.AddSingleton<IPokaYokeDashboard, PokaYokeDashboardRepo>();
+builder.Services.AddSingleton<IGiftVersion, GiftVersionRepo>();
 
 var UploadFolderPath = builder.Configuration["UploadFolderPath"];
 

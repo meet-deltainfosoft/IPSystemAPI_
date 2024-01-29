@@ -93,6 +93,7 @@ namespace Repository
                     dynamicParameters.Add("@UserId", InsertStages.UserId);
                     dynamicParameters.Add("@IsSkip", InsertStages.IsSkip);
                     dynamicParameters.Add("@PumpSerialNumber", InsertStages.PumpSerialNumber);
+                    
                     var result = await dbConnection.QueryAsync("Kaizen_Master_Products", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
                     return new Response() { Message = "Successful", IsSuccessful = true, Data = result };
                 }
@@ -123,9 +124,10 @@ namespace Repository
                     dynamicParameters.Add("@IsSkip", products.IsSkip);
                     dynamicParameters.Add("@kwLabel", products.kwLabel);
                     dynamicParameters.Add("@PlanId", products.PlantId);
+                    dynamicParameters.Add("@MainType", products.MainType);
+                    dynamicParameters.Add("@ApplicationVersion", products.ApplicationVersion);
                     var result = await dbConnection.QueryAsync("Kaizen_Master_Products", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
                     return new Response() { Message = "Successful", IsSuccessful = true, Data = result };
-
                 }
             }
             catch (Exception ex)
@@ -477,7 +479,7 @@ namespace Repository
                 return new Response() { IsSuccessful = true, Message = "Successful", Data = null };
             }
         }
-        public async Task<Response> UpdateCurveImages(UpdateCurveImages updateCurveImages, IFormFile ImageCurveImage, IFormFile ImageFrontView, IFormFile ImageSideView)
+        public async Task<Response> UpdateCurveImages(UpdateCurveImages updateCurveImages, IFormFile? ImageCurveImage, IFormFile? ImageFrontView, IFormFile? ImageSideView)
         {
             try
             {
@@ -628,6 +630,7 @@ namespace Repository
                     dynamicParameters.Add("@ProductOrderNumber", UpdateMotorSerialNumber.ProductOrderNumber);
                     dynamicParameters.Add("@MotorPartNumber", UpdateMotorSerialNumber.MotorPartNumber);
                     dynamicParameters.Add("@MotorSerialNumber", UpdateMotorSerialNumber.MotorSerialNumber);
+                    dynamicParameters.Add("@PumpSerialNumber", UpdateMotorSerialNumber.PumpSerialNumber);
                     var result = await dbConnection.QueryAsync("Kaizen_Master_Products", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
                     return new Response() { Message = "Successful", IsSuccessful = true, Data = result };
                 }
@@ -653,6 +656,7 @@ namespace Repository
                     dynamicParameters.Add("@UserId", UploadNamePlatePhotos.UserId);
                     dynamicParameters.Add("@IsSkip", UploadNamePlatePhotos.IsSkip);
                     dynamicParameters.Add("@PumpSerialNumber", UploadNamePlatePhotos.PumpSerialNumber);
+                    dynamicParameters.Add("@NamePlateText", UploadNamePlatePhotos.NamePlateText);
                     string imageDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Images");
                     if (!Directory.Exists(imageDirectory))
                     {
@@ -705,6 +709,41 @@ namespace Repository
                     }
                     dynamicParameters.Add("@Photo1", FileUploadPath + uniqueFileName);
 
+                    var result = await dbConnection.QueryAsync("Kaizen_Master_Products", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
+                    return new Response() { Message = "Successful", IsSuccessful = true, Data = result };
+                }
+            }
+            catch (Exception)
+            {
+                return new Response() { IsSuccessful = false, Message = "Oops Something Went Wrong", Data = null };
+            }
+        }
+        public async Task<Response> GetPumpDetails()
+        {
+            try
+            {
+                using (var dbConnection = GetDbConnection())
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@Action", "GetPumpDetails");
+                    var result = await dbConnection.QueryAsync("Kaizen_Master_Products", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
+                    return new Response() { Message = "Successful", IsSuccessful = true, Data = result };
+                }
+            }
+            catch (Exception)
+            {
+                return new Response() { IsSuccessful = false, Message = "Oops Something Went Wrong", Data = null };
+            }
+        }
+        public async Task<Response> GetPumpDetailsById(GetPumpDetailsById getPumpDetailsById)
+        {
+            try
+            {
+                using (var dbConnection = GetDbConnection())
+                {
+                    DynamicParameters dynamicParameters = new DynamicParameters();
+                    dynamicParameters.Add("@Action", "GetPumpDetailsById");
+                    dynamicParameters.Add("@PumpMotorId", getPumpDetailsById.PumpMotorId);
                     var result = await dbConnection.QueryAsync("Kaizen_Master_Products", dynamicParameters, commandType: System.Data.CommandType.StoredProcedure);
                     return new Response() { Message = "Successful", IsSuccessful = true, Data = result };
                 }
